@@ -22,6 +22,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.fionaavila.pemesananmenu.R;
 import com.fionaavila.pemesananmenu.databinding.FragmentGalleryBinding;
 
+import java.sql.Time;
 import java.util.Calendar;
 import java.util.Locale;
 
@@ -33,6 +34,7 @@ public class GalleryFragment extends Fragment {
     private ImageButton button_jam, button_tanggal;
     private int jam, menit, tahun, bulan, hari;
     private DatePickerDialog.OnDateSetListener dateSetListener;
+    private TimePickerDialog.OnTimeSetListener timeSetListener;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -69,6 +71,34 @@ public class GalleryFragment extends Fragment {
                 etTanggal.setText(date);
             }
         };
+
+        button_jam = root.findViewById(R.id.pilih_jam);
+        etJam = root.findViewById(R.id.isi_jam);
+
+        button_jam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Calendar calendar = Calendar.getInstance();
+                jam = calendar.get(Calendar.HOUR_OF_DAY);
+                menit = calendar.get(Calendar.MINUTE);
+
+                TimePickerDialog dialogT;
+                dialogT = new TimePickerDialog(getContext(), new TimePickerDialog.OnTimeSetListener() {
+                    @Override
+                    public void onTimeSet(TimePicker timePicker, int hourOfDay, int minute) {
+                        jam = hourOfDay;
+                        menit = minute;
+
+                        if(jam <= 12){
+                            etJam.setText(String.format(Locale.getDefault(), "%d:%d am", jam, menit));
+                        }else{
+                            etJam.setText(String.format(Locale.getDefault(), "%d:%d pm", jam, menit));
+                        }
+                    }
+                }, jam, menit, true);
+                dialogT.show();
+            }
+        });
 
         return root;
     }
