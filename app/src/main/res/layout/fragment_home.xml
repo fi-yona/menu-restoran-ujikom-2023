@@ -1,22 +1,848 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
-
-    <TextView
-        android:id="@+id/text_home"
+    
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="409dp"
+            android:layout_height="889dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/main"
+            android:padding="20dp"
+            android:layout_marginBottom="50dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+            <!--Tabel 1-->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/id_menu"
+                    android:textStyle="bold"
+                    android:layout_width="120dp"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text=": B01"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/jenis_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/min"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/nama_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text=": Kopi Hitam"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/deskripsi_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <ScrollView>
+                    <TextView
+                        android:padding="3dip"
+                        android:text=": Kopi Hitam dengan dibuat dengan teknik ekspresso, dimana biji kopi yang digunakan yaitu berasal dari Aceh Gayo jenis Arabika, disajikan dengan gula terpisah."
+                        android:fontFamily="sans-serif"
+                        android:textSize="18dp"
+                        android:textColor="@color/text_color"
+                        android:layout_height="200dp"
+                        android:layout_width="240dp"/>
+                </ScrollView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main"
+                android:layout_marginBottom="50dp">
+                <TextView
+                    android:text="@string/harga_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text=": Rp 10.000"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+
+            <!--Tabel 2-->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/id_menu"
+                    android:textStyle="bold"
+                    android:layout_width="120dp"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text=": B02"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/jenis_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/min"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/nama_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text=": Cappucino"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/deskripsi_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <ScrollView>
+                    <TextView
+                        android:padding="3dip"
+                        android:text=": Paduan kopi dengan buih susu kental serta menggunakan sirup karamel, dimana biji kopi yang digunakan berasal dari Gunung Puntang Jawa Barat jenis Robusta."
+                        android:fontFamily="sans-serif"
+                        android:textSize="18dp"
+                        android:textColor="@color/text_color"
+                        android:layout_height="200dp"
+                        android:layout_width="240dp"/>
+                </ScrollView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main"
+                android:layout_marginBottom="50dp">
+                <TextView
+                    android:text="@string/harga_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text=": Rp 20.000"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+
+            <!--Tabel 3-->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/id_menu"
+                    android:textStyle="bold"
+                    android:layout_width="120dp"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text=": M03"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/jenis_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/min"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/nama_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text=": Sparkling Tea"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/deskripsi_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <ScrollView>
+                    <TextView
+                        android:padding="3dip"
+                        android:text=": Minuman teh yang menggunakan daun teh dari pegunungan daerah Garut dengan tambahan sari melati asli dan gula merah alami."
+                        android:fontFamily="sans-serif"
+                        android:textSize="18dp"
+                        android:textColor="@color/text_color"
+                        android:layout_height="200dp"
+                        android:layout_width="240dp"/>
+                </ScrollView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main"
+                android:layout_marginBottom="50dp">
+                <TextView
+                    android:text="@string/harga_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text=": Rp 15.000"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+
+            <!--Tabel 4-->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/id_menu"
+                    android:textStyle="bold"
+                    android:layout_width="120dp"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text=": F01"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/jenis_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/mak"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/nama_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text=": Batagor"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/deskripsi_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <ScrollView>
+                    <TextView
+                        android:padding="3dip"
+                        android:text=": Baso dan Tahu Goreng dengan sajian bumbu kacang dan kecap khas Bandung."
+                        android:fontFamily="sans-serif"
+                        android:textSize="18dp"
+                        android:textColor="@color/text_color"
+                        android:layout_height="200dp"
+                        android:layout_width="240dp"/>
+                </ScrollView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main"
+                android:layout_marginBottom="50dp">
+                <TextView
+                    android:text="@string/harga_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text=": Rp 25.000"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+
+            <!--Tabel 5-->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/id_menu"
+                    android:textStyle="bold"
+                    android:layout_width="120dp"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text=": F02"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/jenis_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/mak"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/nama_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text=": Cireng"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/deskripsi_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <ScrollView>
+                    <TextView
+                        android:padding="3dip"
+                        android:text=": Makanan ringan berupa tepung kanji goreng isi bahan dasar tempe fermentasi yang disebut oncom, disajikan dengan bumbu kacang pedas."
+                        android:fontFamily="sans-serif"
+                        android:textSize="18dp"
+                        android:textColor="@color/text_color"
+                        android:layout_height="200dp"
+                        android:layout_width="240dp"/>
+                </ScrollView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main"
+                android:layout_marginBottom="50dp">
+                <TextView
+                    android:text="@string/harga_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text=": Rp 10.000"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+
+            <!--Tabel 6-->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/id_menu"
+                    android:textStyle="bold"
+                    android:layout_width="120dp"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text=": F03"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/jenis_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/mak"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/nama_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text=": Nasi Goreng"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/deskripsi_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <ScrollView>
+                    <TextView
+                        android:padding="3dip"
+                        android:text=": Nasi goreng ayam yang disajikan dengan telur mata sapi disertai satai ayam."
+                        android:fontFamily="sans-serif"
+                        android:textSize="18dp"
+                        android:textColor="@color/text_color"
+                        android:layout_height="200dp"
+                        android:layout_width="240dp"/>
+                </ScrollView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main"
+                android:layout_marginBottom="50dp">
+                <TextView
+                    android:text="@string/harga_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text=": Rp 50.000"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+
+            <!--Tabel 7-->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/id_menu"
+                    android:textStyle="bold"
+                    android:layout_width="120dp"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text=": D001"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/jenis_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/des"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/nama_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text=": Cheese Cake"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/deskripsi_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <ScrollView>
+                    <TextView
+                        android:padding="3dip"
+                        android:text=": Kue Tart 1 slice dengan bahan utama cream cheese dengan topping buah-buahan asli seperti anggur, jeruk, dan kiwi."
+                        android:fontFamily="sans-serif"
+                        android:textSize="18dp"
+                        android:textColor="@color/text_color"
+                        android:layout_height="200dp"
+                        android:layout_width="240dp"/>
+                </ScrollView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main"
+                android:layout_marginBottom="50dp">
+                <TextView
+                    android:text="@string/harga_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text=": Rp 40.000"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+
+            <!--Tabel 8-->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/id_menu"
+                    android:textStyle="bold"
+                    android:layout_width="120dp"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text=": D002"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/jenis_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/des"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/nama_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text=": Black Sallad"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+                <TextView
+                    android:text="@string/deskripsi_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <ScrollView>
+                    <TextView
+                        android:padding="3dip"
+                        android:text=": Potongan buah0buah segar yang terdiri dari pepaya, jambu, melon, dan mangga disajikan dengan bumbu rujak kacang pedas dan gula merah."
+                        android:fontFamily="sans-serif"
+                        android:textSize="18dp"
+                        android:textColor="@color/text_color"
+                        android:layout_height="200dp"
+                        android:layout_width="240dp"/>
+                </ScrollView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main"
+                android:layout_marginBottom="50dp">
+                <TextView
+                    android:text="@string/harga_menu"
+                    android:textStyle="bold"
+                    android:padding="3dip"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+                <TextView
+                    android:padding="3dip"
+                    android:text=": Rp 30.000"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_color"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

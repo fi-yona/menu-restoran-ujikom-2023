@@ -14,4 +14,13 @@
 
     <string name="welcome">WELCOME</string>
     <string name="credit">By Fiona Avila Putri\n2023</string>
+
+    <string name="id_menu">ID</string>
+    <string name="jenis_menu">JENIS</string>
+    <string name="nama_menu">NAMA</string>
+    <string name="deskripsi_menu">DESKRIPSI</string>
+    <string name="harga_menu">HARGA</string>
+    <string name="min">: Minuman</string>
+    <string name="mak">: Makanan</string>
+    <string name="des">: Dessert</string>
 </resources>
