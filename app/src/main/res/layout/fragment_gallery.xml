@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,16 +7,161 @@
     tools:context=".ui.gallery.GalleryFragment">
 
     <TextView
-        android:id="@+id/text_gallery"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Form Pemesanan"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/text_color" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="100dp"
+        android:paddingHorizontal="30dp"
+        android:layout_centerHorizontal="true">
+        <TableRow
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:id="@+id/tanggal_pesan"
+                android:text="TANGGAL"
+                android:textStyle="bold"
+                android:padding="3dip"
+                android:fontFamily="sans-serif"
+                android:textSize="18dp"
+                android:textColor="@color/text_color"
+                android:layout_marginRight="5dp"/>
+            <EditText
+                android:id="@+id/isi_tanggal"
+                android:layout_width="200dp"
+                android:hint="Pilih Tanggal"
+                android:textColorHint="@color/main"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/text_color"
+                />
+            <ImageButton
+                android:id="@+id/pilih_tanggal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_date_range_24"
+                android:backgroundTint="@color/main"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:id="@+id/jam_pesan"
+                android:text="JAM"
+                android:textStyle="bold"
+                android:padding="3dip"
+                android:fontFamily="sans-serif"
+                android:textSize="18dp"
+                android:textColor="@color/text_color"
+                android:layout_marginRight="5dp"/>
+            <EditText
+                android:id="@+id/isi_jam"
+                android:layout_width="200dp"
+                android:hint="Pilih Jam"
+                android:textColorHint="@color/main"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/text_color"
+                />
+            <ImageButton
+                android:id="@+id/pilih_jam"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_more_time_24"
+                android:backgroundTint="@color/main"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:id="@+id/no_meja_pesan"
+                android:text="NO MEJA"
+                android:textStyle="bold"
+                android:padding="3dip"
+                android:fontFamily="sans-serif"
+                android:textSize="18dp"
+                android:textColor="@color/text_color"
+                android:layout_marginRight="5dp"/>
+            <EditText
+                android:id="@+id/isi_no_meja"
+                android:layout_width="200dp"
+                android:hint="Isi Nomor Meja"
+                android:textColorHint="@color/main"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/text_color"
+                android:inputType="number"
+                android:ems="10"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:id="@+id/kode_menu_pesan"
+                android:text="ID MENU"
+                android:textStyle="bold"
+                android:padding="3dip"
+                android:fontFamily="sans-serif"
+                android:textSize="18dp"
+                android:textColor="@color/text_color"
+                android:layout_marginRight="5dp"/>
+            <EditText
+                android:id="@+id/isi_id_menu"
+                android:layout_width="200dp"
+                android:hint="Isi ID Menu"
+                android:textColorHint="@color/main"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/text_color"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:id="@+id/harga_menu"
+                android:text="HARGA"
+                android:textStyle="bold"
+                android:padding="3dip"
+                android:fontFamily="sans-serif"
+                android:textSize="18dp"
+                android:textColor="@color/text_color"
+                android:layout_marginRight="5dp"/>
+            <EditText
+                android:id="@+id/isi_harga"
+                android:layout_width="200dp"
+                android:hint="Isi Harga"
+                android:textColorHint="@color/main"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/text_color"
+                android:inputType="number"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/submit_pesan"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="400dp"
+        android:backgroundTint="@color/main"
+        android:elevation="10dp"
+        android:fontFamily="sans-serif"
+        android:text="PESAN"
+        android:textColor="@color/text_color"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:viewportWidth="167"
+        android:viewportHeight="42"
+        android:strokeWidth="2"
+        android:strokeColor="#581018"/>
+</RelativeLayout>
