@@ -7,14 +7,14 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Pemesanan Menu"
         android:supportsRtl="true"
         android:theme="@style/Theme.PemesananMenu"
         tools:targetApi="31">
         <activity
             android:name=".MenuActivity"
             android:exported="false"
-            android:label="@string/title_activity_menu"
+            android:label="Pemesanan Menu"
             android:theme="@style/Theme.PemesananMenu.NoActionBar" />
         <activity
             android:name=".MainActivity"
